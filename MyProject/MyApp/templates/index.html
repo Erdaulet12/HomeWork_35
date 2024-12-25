@@ -1,0 +1,10 @@
+{% if user_groups %}
+    <h3>Ваши группы:</h3>
+    <ul>
+        {% for group in user_groups %}
+            <li>{{ group.name }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Вы не состоите в группах.</p>
+{% endif %}
